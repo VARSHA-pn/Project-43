@@ -121,7 +121,10 @@ function draw()
     gameOver.visible = true;
     restart.visible = true;
 
-    text("OOPS! U ARE DONE",displayWidth - 50,displayHeight-90)
+    if(gameState === END)
+     {
+        text("OOPS! U ARE DONE",displayWidth/2 - 550, displayHeight/2 - 500); 
+     }
     
     //set velcity of each game object to 0
     ground.velocityX = 0;
